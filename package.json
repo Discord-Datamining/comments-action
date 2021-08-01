@@ -1,0 +1,29 @@
+{
+  "name": "comments-action",
+  "version": "0.1.0",
+  "description": "GitHub Action for posting commit comments in the Discord-Datamining repo",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "build": "ncc build index.mjs --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Discord-Dataming/comments-action.git"
+  },
+  "author": "Tiemen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Discord-Dataming/comments-action/issues"
+  },
+  "homepage": "https://github.com/Discord-Dataming/comments-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "@adryd325/discord-datamining-lang-differ": "github:adryd325/discordDataminingLangDiffer",
+    "@octokit/webhooks-types": "^4.2.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.29.0"
+  }
+}

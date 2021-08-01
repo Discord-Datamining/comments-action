@@ -4,12 +4,12 @@ import { context, getOctokit } from "@actions/github"
 import differ from "@adryd325/discord-datamining-lang-differ"
 import { PushEvent } from "@octokit/webhooks-types"
 
-const token = process.env.GITHUB_TOKEN
+const token = process.env.GH_TOKEN
 const filenameRegex = /\d{20,}\.js$/
 
 async function run() {
     try {
-        if (!token) return core.setFailed("Invalid GITHUB_TOKEN")
+        if (!token) return core.setFailed("Invalid GH_TOKEN")
 
         const octokit = getOctokit(token)
         const { owner, repo } = context.repo

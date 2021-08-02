@@ -1,0 +1,8 @@
+{
+    "search.exclude": {
+        "**/dist": true
+    },
+    "files.exclude": {
+        "**/node_modules": true
+    }
+}

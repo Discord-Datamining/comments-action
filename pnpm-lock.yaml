@@ -5,7 +5,7 @@ specifiers:
   '@actions/github': ^5.0.0
   '@adryd325/discord-datamining-lang-differ': github:adryd325/discordDataminingLangDiffer
   '@octokit/webhooks-types': ^4.2.2
-  '@vercel/ncc': 0.28.6
+  '@vercel/ncc': 0.31.1
   typescript: ^4.3.5
 
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
 
 devDependencies:
   '@octokit/webhooks-types': 4.2.2
-  '@vercel/ncc': 0.28.6
+  '@vercel/ncc': 0.31.1
   typescript: 4.3.5
 
 packages:
@@ -135,8 +135,8 @@ packages:
     resolution: {integrity: sha512-kVrqXhbclHNHGu9ztnAwSncIgJv/FaxmzXJvGXNdcCpV1b8u1/Mi6z6m0vwy0LzKeXFTPLH0NzwmoJ3fNCIq0g==}
     dev: false
 
-  /@vercel/ncc/0.28.6:
-    resolution: {integrity: sha512-t4BoSSuyK8BZaUE0gV18V6bkFs4st7baumtFGa50dv1tMu2GDBEBF8sUZaKBdKiL6DzJ2D2+XVCwYWWDcQOYdQ==}
+  /@vercel/ncc/0.31.1:
+    resolution: {integrity: sha512-g0FAxwdViI6UzsiVz5HssIHqjcPa1EHL6h+2dcJD893SoCJaGdqqgUF09xnMW6goWnnhbLvgiKlgJWrJa+7qYA==}
     hasBin: true
     dev: true
 

@@ -1,5 +1,5 @@
 name: 'Commit comments'
 description: 'GitHub Action for posting commit comments in the Discord-Datamining repo'
 runs:
-  using: 'node12'
+  using: 'node15'
   main: 'dist/index.js'

@@ -1,5 +1,8 @@
 lockfileVersion: 5.3
 
+overrides:
+  acorn: npm:acorn-with-stage3
+
 specifiers:
   '@actions/core': ^1.4.0
   '@actions/github': ^5.0.0

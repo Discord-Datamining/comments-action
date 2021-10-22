@@ -5,7 +5,7 @@
   "type": "commonjs",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/index.ts --minify",
+    "build": "ncc build src/index.ts -o out --minify && tsc out/index.js --outDir dist --allowJs --sourceMap false",
     "commit": "pnpm run build && git add -A && git commit -m",
     "postcommit": "git push"
   },

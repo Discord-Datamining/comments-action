@@ -11,7 +11,7 @@ specifiers:
 dependencies:
   '@actions/core': 1.4.0
   '@actions/github': 5.0.0
-  '@adryd325/discord-datamining-lang-differ': github.com/adryd325/discordDataminingLangDiffer/cc16ef933fdbd11580d4790e2dd2f52fa072993f
+  '@adryd325/discord-datamining-lang-differ': github.com/adryd325/discordDataminingLangDiffer/8f70629609b5ef4d7974831a71a286f70cd3e030
 
 devDependencies:
   '@octokit/webhooks-types': 4.2.2
@@ -194,8 +194,8 @@ packages:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
     dev: false
 
-  github.com/adryd325/discordDataminingLangDiffer/cc16ef933fdbd11580d4790e2dd2f52fa072993f:
-    resolution: {tarball: https://codeload.github.com/adryd325/discordDataminingLangDiffer/tar.gz/cc16ef933fdbd11580d4790e2dd2f52fa072993f}
+  github.com/adryd325/discordDataminingLangDiffer/8f70629609b5ef4d7974831a71a286f70cd3e030:
+    resolution: {tarball: https://codeload.github.com/adryd325/discordDataminingLangDiffer/tar.gz/8f70629609b5ef4d7974831a71a286f70cd3e030}
     name: '@adryd325/discord-datamining-lang-differ'
     version: 1.0.2
     dependencies:

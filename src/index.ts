@@ -35,7 +35,7 @@ async function run() {
 
         const { blob_url, sha: fileSha } = commit?.data?.files?.[0]
 
-        if (!filePathRegex?.test(blob_url))
+        if (!filePathRegex?.test(decodeURIComponent(blob_url)))
             return core.info("not a build file")
 
         const currentTree = await octokit.rest.git.getTree({

@@ -1,6 +1,6 @@
 {
   "name": "comments-action",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GitHub Action for posting commit comments in the Discord-Datamining repo",
   "type": "commonjs",
   "main": "dist/index.js",
@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Discord-Dataming/comments-action.git"
+    "url": "git+https://github.com/Discord-Datamining/comments-action.git"
   },
   "author": "Tiemen",
   "license": "MIT",
-  "homepage": "https://github.com/Discord-Dataming/comments-action#readme",
+  "homepage": "https://github.com/Discord-Datamining/comments-action#readme",
   "dependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^5.0.0",

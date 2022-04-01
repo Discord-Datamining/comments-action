@@ -5522,7 +5522,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
                             if (!D || (D === null || D === void 0 ? void 0 : D.status) !== "added")
                                 return [2 /*return*/, a.info("not a build commit")];
                             _b = (r = (t = y === null || y === void 0 ? void 0 : y.data) === null || t === void 0 ? void 0 : t.files) === null || r === void 0 ? void 0 : r[0], x = _b.blob_url, w = _b.sha;
-                            if (!(p === null || p === void 0 ? void 0 : p.test(x)))
+                            if (!(p === null || p === void 0 ? void 0 : p.test(decodeURIComponent(x))))
                                 return [2 /*return*/, a.info("not a build file")];
                             return [4 /*yield*/, d.rest.git.getTree({ owner: m, repo: g, tree_sha: E.before })];
                         case 2:

@@ -17,14 +17,14 @@
   "license": "MIT",
   "homepage": "https://github.com/Discord-Datamining/comments-action#readme",
   "dependencies": {
-    "@actions/core": "^1.4.0",
-    "@actions/github": "^5.0.0",
-    "@adryd325/discord-datamining-lang-differ": "git+https://github.com/adryd325/discord-datamining-lang-differ.git"
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.1.0",
+    "@adryd325/discord-datamining-lang-differ": "github:adryd325/discord-datamining-lang-differ#0d6186cfb7f64206d1dfd182607c7ce1d5a3ff8f"
   },
   "devDependencies": {
-    "@octokit/webhooks-types": "^4.2.2",
-    "@types/node": "^18.0.6",
-    "@vercel/ncc": "0.31.1",
-    "typescript": "^4.3.5"
+    "@octokit/webhooks-types": "^6.3.6",
+    "@types/node": "^18.7.23",
+    "@vercel/ncc": "0.34.0",
+    "typescript": "^4.8.3"
   }
 }

@@ -1,4 +1,4 @@
-import * as core from "@actions/core"
+import { debug, info, isDebug, setFailed } from "@actions/core"
 import { context, getOctokit } from "@actions/github"
 import differ from "@adryd325/discord-datamining-lang-differ"
 import type { PushEvent } from "@octokit/webhooks-types"
@@ -9,7 +9,7 @@ const currentFilename = "current.js"
 
 async function run() {
     try {
-        if (!token) return core.setFailed("Invalid GITHUB_TOKEN")
+        if (!token) return setFailed("Invalid GITHUB_TOKEN")
 
         const octokit = getOctokit(token)
         const { owner, repo } = context.repo
@@ -26,17 +26,17 @@ async function run() {
         })
 
         if (!commit)
-            return core.setFailed("commit not found")
+            return setFailed("commit not found")
 
         const commitFile = commit.data.files?.[0]
 
         if (!commitFile || commitFile?.status !== "added")
-            return core.info("not a build commit")
+            return info("not a build commit")
 
         const { blob_url, sha: fileSha } = commit?.data?.files?.[0]
 
         if (!filePathRegex?.test(decodeURIComponent(blob_url)))
-            return core.info("not a build file")
+            return info("not a build file")
 
         const currentTree = await octokit.rest.git.getTree({
             owner,
@@ -46,7 +46,7 @@ async function run() {
         const currentFileSha = currentTree?.data?.tree?.find?.(file => file.path === currentFilename)?.sha
 
         if (!currentFileSha)
-            return core.info("no current file")
+            return info("no current file")
 
         const currentFile = await octokit.rest.git.getBlob({
             owner,
@@ -61,9 +61,9 @@ async function run() {
 
         const currentContent = Buffer.from(currentFile.data.content, "base64").toString("utf8")
         const newContent = Buffer.from(newFile.data.content, "base64").toString("utf8")
-        if (core.isDebug()) {
-            core.debug(`${currentContent.length}`)
-            core.debug(`${newContent.length}`)
+        if (isDebug()) {
+            debug(`${currentContent.length}`)
+            debug(`${newContent.length}`)
         }
 
         let diff: string
@@ -74,11 +74,11 @@ async function run() {
                 "codeblock",
             )
         } catch (e) {
-            return core.setFailed(`unable to diff strings: ${e}`)
+            return setFailed(`unable to diff strings: ${e}`)
         }
 
         if (!diff)
-            return core.info("no strings changed")
+            return info("no strings changed")
 
         await octokit.rest.repos.createCommitComment({
             owner,
@@ -86,9 +86,9 @@ async function run() {
             commit_sha: commitSha,
             body: diff
         })
-        return core.info("created commit comment")
+        return info("created commit comment")
     } catch (error) {
-        core.setFailed(core.isDebug() ? error.stack : error.message)
+        setFailed(isDebug() ? error.stack : error.message)
     }
 }
 run()

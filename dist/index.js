@@ -7534,55 +7534,44 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             Object.keys(p).forEach((function (e) { i[e] = p[e]; }));
         } return i; } } }, 8891: function (e, t, a) {
             "use strict";
-            var i = this && this.__createBinding || (Object.create ? function (e, t, a, i) { if (i === undefined)
-                i = a; var p = Object.getOwnPropertyDescriptor(t, a); if (!p || ("get" in p ? !t.__esModule : p.writable || p.configurable)) {
-                p = { enumerable: true, get: function () { return t[a]; } };
-            } Object.defineProperty(e, i, p); } : function (e, t, a, i) { if (i === undefined)
-                i = a; e[i] = t[a]; });
-            var p = this && this.__setModuleDefault || (Object.create ? function (e, t) { Object.defineProperty(e, "default", { enumerable: true, value: t }); } : function (e, t) { e["default"] = t; });
-            var s = this && this.__importStar || function (e) { if (e && e.__esModule)
-                return e; var t = {}; if (e != null)
-                for (var a in e)
-                    if (a !== "default" && Object.prototype.hasOwnProperty.call(e, a))
-                        i(t, e, a); p(t, e); return t; };
-            var r = this && this.__importDefault || function (e) { return e && e.__esModule ? e : { "default": e }; };
+            var i = this && this.__importDefault || function (e) { return e && e.__esModule ? e : { "default": e }; };
             Object.defineProperty(t, "__esModule", { value: true });
-            var o = s(a(5681));
-            var d = a(4128);
-            var n = r(a(9594));
-            var l = process.env.GITHUB_TOKEN;
-            var m = /\/\d{4}\/(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2})\/[a-z0-9]{20,}\.js$/;
-            var u = "current.js";
+            var p = a(5681);
+            var s = a(4128);
+            var r = i(a(9594));
+            var o = process.env.GITHUB_TOKEN;
+            var d = /\/\d{4}\/(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2})\/[a-z0-9]{20,}\.js$/;
+            var n = "current.js";
             function run() {
-                return __awaiter(this, void 0, void 0, function () { var e, t, a, i, p, s, r, c, _a, h, v, g, w, _, b, _b, T, E, y, S, k, x, A, P, C, e_53; return __generator(this, function (_c) {
+                return __awaiter(this, void 0, void 0, function () { var e, t, a, i, l, m, u, c, _a, h, v, g, w, _, b, _b, T, E, y, S, k, x, A, P, C, e_53; return __generator(this, function (_c) {
                     switch (_c.label) {
                         case 0:
                             _c.trys.push([0, 6, , 7]);
-                            if (!l)
-                                return [2 /*return*/, o.setFailed("Invalid GITHUB_TOKEN")];
-                            c = (0, d.getOctokit)(l);
-                            _a = d.context.repo, h = _a.owner, v = _a.repo;
-                            if (d.context.eventName !== "push")
+                            if (!o)
+                                return [2 /*return*/, (0, p.setFailed)("Invalid GITHUB_TOKEN")];
+                            c = (0, s.getOctokit)(o);
+                            _a = s.context.repo, h = _a.owner, v = _a.repo;
+                            if (s.context.eventName !== "push")
                                 return [2 /*return*/];
-                            g = d.context.payload;
+                            g = s.context.payload;
                             w = g.after;
                             return [4 /*yield*/, c.rest.repos.getCommit({ owner: h, repo: v, ref: w })];
                         case 1:
                             _ = _c.sent();
                             if (!_)
-                                return [2 /*return*/, o.setFailed("commit not found")];
+                                return [2 /*return*/, (0, p.setFailed)("commit not found")];
                             b = (e = _.data.files) === null || e === void 0 ? void 0 : e[0];
                             if (!b || (b === null || b === void 0 ? void 0 : b.status) !== "added")
-                                return [2 /*return*/, o.info("not a build commit")];
+                                return [2 /*return*/, (0, p.info)("not a build commit")];
                             _b = (a = (t = _ === null || _ === void 0 ? void 0 : _.data) === null || t === void 0 ? void 0 : t.files) === null || a === void 0 ? void 0 : a[0], T = _b.blob_url, E = _b.sha;
-                            if (!(m === null || m === void 0 ? void 0 : m.test(decodeURIComponent(T))))
-                                return [2 /*return*/, o.info("not a build file")];
+                            if (!(d === null || d === void 0 ? void 0 : d.test(decodeURIComponent(T))))
+                                return [2 /*return*/, (0, p.info)("not a build file")];
                             return [4 /*yield*/, c.rest.git.getTree({ owner: h, repo: v, tree_sha: g.before })];
                         case 2:
                             y = _c.sent();
-                            S = (r = (s = (p = (i = y === null || y === void 0 ? void 0 : y.data) === null || i === void 0 ? void 0 : i.tree) === null || p === void 0 ? void 0 : p.find) === null || s === void 0 ? void 0 : s.call(p, (function (e) { return e.path === u; }))) === null || r === void 0 ? void 0 : r.sha;
+                            S = (u = (m = (l = (i = y === null || y === void 0 ? void 0 : y.data) === null || i === void 0 ? void 0 : i.tree) === null || l === void 0 ? void 0 : l.find) === null || m === void 0 ? void 0 : m.call(l, (function (e) { return e.path === n; }))) === null || u === void 0 ? void 0 : u.sha;
                             if (!S)
-                                return [2 /*return*/, o.info("no current file")];
+                                return [2 /*return*/, (0, p.info)("no current file")];
                             return [4 /*yield*/, c.rest.git.getBlob({ owner: h, repo: v, file_sha: S })];
                         case 3:
                             k = _c.sent();
@@ -7591,26 +7580,26 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
                             x = _c.sent();
                             A = Buffer.from(k.data.content, "base64").toString("utf8");
                             P = Buffer.from(x.data.content, "base64").toString("utf8");
-                            if (o.isDebug()) {
-                                o.debug("".concat(A.length));
-                                o.debug("".concat(P.length));
+                            if ((0, p.isDebug)()) {
+                                (0, p.debug)("".concat(A.length));
+                                (0, p.debug)("".concat(P.length));
                             }
                             C = void 0;
                             try {
-                                C = (0, n["default"])(A, P, "codeblock");
+                                C = (0, r["default"])(A, P, "codeblock");
                             }
                             catch (e) {
-                                return [2 /*return*/, o.setFailed("unable to diff strings: ".concat(e))];
+                                return [2 /*return*/, (0, p.setFailed)("unable to diff strings: ".concat(e))];
                             }
                             if (!C)
-                                return [2 /*return*/, o.info("no strings changed")];
+                                return [2 /*return*/, (0, p.info)("no strings changed")];
                             return [4 /*yield*/, c.rest.repos.createCommitComment({ owner: h, repo: v, commit_sha: w, body: C })];
                         case 5:
                             _c.sent();
-                            return [2 /*return*/, o.info("created commit comment")];
+                            return [2 /*return*/, (0, p.info)("created commit comment")];
                         case 6:
                             e_53 = _c.sent();
-                            o.setFailed(o.isDebug() ? e_53.stack : e_53.message);
+                            (0, p.setFailed)((0, p.isDebug)() ? e_53.stack : e_53.message);
                             return [3 /*break*/, 7];
                         case 7: return [2 /*return*/];
                     }

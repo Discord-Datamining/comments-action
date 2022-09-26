@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@actions/core': ^1.9.1
   '@actions/github': ^5.1.0
-  '@adryd325/discord-datamining-lang-differ': github:adryd325/discord-datamining-lang-differ#0d6186cfb7f64206d1dfd182607c7ce1d5a3ff8f
+  '@adryd325/discord-datamining-lang-differ': github:adryd325/discord-datamining-lang-differ#70fa2ac77aba740ccbd13397a8c38d9a5ed2dd86
   '@octokit/webhooks-types': ^6.3.6
   '@types/node': ^18.7.23
   '@vercel/ncc': 0.34.0
@@ -12,7 +12,7 @@ specifiers:
 dependencies:
   '@actions/core': 1.9.1
   '@actions/github': 5.1.0
-  '@adryd325/discord-datamining-lang-differ': github.com/adryd325/discord-datamining-lang-differ/0d6186cfb7f64206d1dfd182607c7ce1d5a3ff8f
+  '@adryd325/discord-datamining-lang-differ': github.com/adryd325/discord-datamining-lang-differ/70fa2ac77aba740ccbd13397a8c38d9a5ed2dd86
 
 devDependencies:
   '@octokit/webhooks-types': 6.3.6
@@ -265,8 +265,8 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: false
 
-  github.com/adryd325/discord-datamining-lang-differ/0d6186cfb7f64206d1dfd182607c7ce1d5a3ff8f:
-    resolution: {tarball: https://codeload.github.com/adryd325/discord-datamining-lang-differ/tar.gz/0d6186cfb7f64206d1dfd182607c7ce1d5a3ff8f}
+  github.com/adryd325/discord-datamining-lang-differ/70fa2ac77aba740ccbd13397a8c38d9a5ed2dd86:
+    resolution: {tarball: https://codeload.github.com/adryd325/discord-datamining-lang-differ/tar.gz/70fa2ac77aba740ccbd13397a8c38d9a5ed2dd86}
     name: '@adryd325/discord-datamining-lang-differ'
     version: 1.1.0
     dependencies:

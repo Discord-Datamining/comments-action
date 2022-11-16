@@ -1,6 +1,6 @@
 {
   "name": "comments-action",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "GitHub Action for posting commit comments in the Discord-Datamining repo",
   "type": "commonjs",
   "main": "dist/index.js",
@@ -19,7 +19,7 @@
   "dependencies": {
     "@actions/core": "^1.9.1",
     "@actions/github": "^5.1.0",
-    "@adryd325/discord-datamining-lang-differ": "github:adryd325/discord-datamining-lang-differ#70fa2ac77aba740ccbd13397a8c38d9a5ed2dd86"
+    "@adryd325/discord-datamining-lang-differ": "github:adryd325/discord-datamining-lang-differ#dc193fa6f95cb015fdccfbdbca32d42fdfd34d22"
   },
   "devDependencies": {
     "@octokit/webhooks-types": "^6.3.6",

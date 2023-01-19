@@ -1,6 +1,6 @@
 {
   "name": "comments-action",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "GitHub Action for posting commit comments in the Discord-Datamining repo",
   "type": "commonjs",
   "main": "dist/index.js",

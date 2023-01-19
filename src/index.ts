@@ -4,7 +4,7 @@ import differ from "@adryd325/discord-datamining-lang-differ"
 import type { PushEvent } from "@octokit/webhooks-types"
 
 const token = process.env.GITHUB_TOKEN
-const filePathRegex = /\/\d{4}\/(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2})\/[a-z0-9]{20,}\.js$/
+const filePathRegex = /(?:\/\d{4}\/(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2})\/[a-z0-9]{20,}|current)\.js$/
 const currentFilename = "current.js"
 
 async function run() {
@@ -30,7 +30,7 @@ async function run() {
 
         const commitFile = commit.data.files?.[0]
 
-        if (!commitFile || commitFile?.status !== "added")
+        if (!commitFile || commitFile?.status !== "modified")
             return info("not a build commit")
 
         const { blob_url, sha: fileSha } = commit?.data?.files?.[0]

@@ -7552,7 +7552,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             var s = a(4128);
             var r = i(a(1761));
             var o = process.env.GITHUB_TOKEN;
-            var n = /\/\d{4}\/(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2})\/[a-z0-9]{20,}\.js$/;
+            var n = /(?:\/\d{4}\/(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2})\/[a-z0-9]{20,}|current)\.js$/;
             var d = "current.js";
             function run() {
                 return __awaiter(this, void 0, void 0, function () { var e, t, a, i, l, m, u, c, _a, h, v, g, w, _, b, _b, T, E, y, S, k, x, A, P, C, e_55; return __generator(this, function (_c) {
@@ -7573,7 +7573,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
                             if (!_)
                                 return [2 /*return*/, (0, p.setFailed)("commit not found")];
                             b = (e = _.data.files) === null || e === void 0 ? void 0 : e[0];
-                            if (!b || (b === null || b === void 0 ? void 0 : b.status) !== "added")
+                            if (!b || (b === null || b === void 0 ? void 0 : b.status) !== "modified")
                                 return [2 /*return*/, (0, p.info)("not a build commit")];
                             _b = (a = (t = _ === null || _ === void 0 ? void 0 : _.data) === null || t === void 0 ? void 0 : t.files) === null || a === void 0 ? void 0 : a[0], T = _b.blob_url, E = _b.sha;
                             if (!(n === null || n === void 0 ? void 0 : n.test(decodeURIComponent(T))))

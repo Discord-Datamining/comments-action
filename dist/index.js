@@ -1793,9 +1793,9 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             } var request = function (e, t) { return fetchWrapper(a.parse(a.merge(e, t))); }; Object.assign(request, { endpoint: a, defaults: withDefaults.bind(null, a) }); return i.request.hook(request, i); }; return Object.assign(newApi, { endpoint: a, defaults: withDefaults.bind(null, a) }); }
             var d = withDefaults(i.endpoint, { headers: { "user-agent": "octokit-request.js/".concat(o, " ").concat(s.getUserAgent()) } });
             t.request = d;
-        }, 9165: function (e, t, a) {
+        }, 4262: function (e, t, a) {
             "use strict";
-            var i = a(2264);
+            var i = a(229);
             var s = /^[\da-fA-F]+$/;
             var r = /^\d+$/;
             var p = new WeakMap;
@@ -1825,8 +1825,8 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
                 return e.namespace.name + ":" + e.name.name; if (e.type === "JSXMemberExpression")
                 return getQualifiedJSXName(e.object) + "." + getQualifiedJSXName(e.property); }
             e.exports = function (e) { e = e || {}; return function (t) { return plugin({ allowNamespaces: e.allowNamespaces !== false, allowNamespacedObjects: !!e.allowNamespacedObjects }, t); }; };
-            Object.defineProperty(e.exports, "tokTypes", { get: function get_tokTypes() { return getJsxTokens(a(5991)).tokTypes; }, configurable: true, enumerable: true });
-            function plugin(e, t) { var p = t.acorn || a(5991); var n = getJsxTokens(p); var o = p.tokTypes; var d = n.tokTypes; var l = p.tokContexts; var u = n.tokContexts.tc_oTag; var m = n.tokContexts.tc_cTag; var h = n.tokContexts.tc_expr; var v = p.isNewLine; var g = p.isIdentifierStart; var w = p.isIdentifierChar; return /** @class */ (function (_super_1) {
+            Object.defineProperty(e.exports, "tokTypes", { get: function get_tokTypes() { return getJsxTokens(a(797)).tokTypes; }, configurable: true, enumerable: true });
+            function plugin(e, t) { var p = t.acorn || a(797); var n = getJsxTokens(p); var o = p.tokTypes; var d = n.tokTypes; var l = p.tokContexts; var u = n.tokContexts.tc_oTag; var m = n.tokContexts.tc_cTag; var h = n.tokContexts.tc_expr; var v = p.isNewLine; var g = p.isIdentifierStart; var w = p.isIdentifierChar; return /** @class */ (function (_super_1) {
                 __extends(class_1, _super_1);
                 function class_1() {
                     return _super_1 !== null && _super_1.apply(this, arguments) || this;
@@ -2038,7 +2038,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
                 } };
                 return class_1;
             }(t)); }
-        }, 2264: function (e) { e.exports = { quot: '"', amp: "&", apos: "'", lt: "<", gt: ">", nbsp: " ", iexcl: "¡", cent: "¢", pound: "£", curren: "¤", yen: "¥", brvbar: "¦", sect: "§", uml: "¨", copy: "©", ordf: "ª", laquo: "«", not: "¬", shy: "­", reg: "®", macr: "¯", deg: "°", plusmn: "±", sup2: "²", sup3: "³", acute: "´", micro: "µ", para: "¶", middot: "·", cedil: "¸", sup1: "¹", ordm: "º", raquo: "»", frac14: "¼", frac12: "½", frac34: "¾", iquest: "¿", Agrave: "À", Aacute: "Á", Acirc: "Â", Atilde: "Ã", Auml: "Ä", Aring: "Å", AElig: "Æ", Ccedil: "Ç", Egrave: "È", Eacute: "É", Ecirc: "Ê", Euml: "Ë", Igrave: "Ì", Iacute: "Í", Icirc: "Î", Iuml: "Ï", ETH: "Ð", Ntilde: "Ñ", Ograve: "Ò", Oacute: "Ó", Ocirc: "Ô", Otilde: "Õ", Ouml: "Ö", times: "×", Oslash: "Ø", Ugrave: "Ù", Uacute: "Ú", Ucirc: "Û", Uuml: "Ü", Yacute: "Ý", THORN: "Þ", szlig: "ß", agrave: "à", aacute: "á", acirc: "â", atilde: "ã", auml: "ä", aring: "å", aelig: "æ", ccedil: "ç", egrave: "è", eacute: "é", ecirc: "ê", euml: "ë", igrave: "ì", iacute: "í", icirc: "î", iuml: "ï", eth: "ð", ntilde: "ñ", ograve: "ò", oacute: "ó", ocirc: "ô", otilde: "õ", ouml: "ö", divide: "÷", oslash: "ø", ugrave: "ù", uacute: "ú", ucirc: "û", uuml: "ü", yacute: "ý", thorn: "þ", yuml: "ÿ", OElig: "Œ", oelig: "œ", Scaron: "Š", scaron: "š", Yuml: "Ÿ", fnof: "ƒ", circ: "ˆ", tilde: "˜", Alpha: "Α", Beta: "Β", Gamma: "Γ", Delta: "Δ", Epsilon: "Ε", Zeta: "Ζ", Eta: "Η", Theta: "Θ", Iota: "Ι", Kappa: "Κ", Lambda: "Λ", Mu: "Μ", Nu: "Ν", Xi: "Ξ", Omicron: "Ο", Pi: "Π", Rho: "Ρ", Sigma: "Σ", Tau: "Τ", Upsilon: "Υ", Phi: "Φ", Chi: "Χ", Psi: "Ψ", Omega: "Ω", alpha: "α", beta: "β", gamma: "γ", delta: "δ", epsilon: "ε", zeta: "ζ", eta: "η", theta: "θ", iota: "ι", kappa: "κ", lambda: "λ", mu: "μ", nu: "ν", xi: "ξ", omicron: "ο", pi: "π", rho: "ρ", sigmaf: "ς", sigma: "σ", tau: "τ", upsilon: "υ", phi: "φ", chi: "χ", psi: "ψ", omega: "ω", thetasym: "ϑ", upsih: "ϒ", piv: "ϖ", ensp: " ", emsp: " ", thinsp: " ", zwnj: "‌", zwj: "‍", lrm: "‎", rlm: "‏", ndash: "–", mdash: "—", lsquo: "‘", rsquo: "’", sbquo: "‚", ldquo: "“", rdquo: "”", bdquo: "„", dagger: "†", Dagger: "‡", bull: "•", hellip: "…", permil: "‰", prime: "′", Prime: "″", lsaquo: "‹", rsaquo: "›", oline: "‾", frasl: "⁄", euro: "€", image: "ℑ", weierp: "℘", real: "ℜ", trade: "™", alefsym: "ℵ", larr: "←", uarr: "↑", rarr: "→", darr: "↓", harr: "↔", crarr: "↵", lArr: "⇐", uArr: "⇑", rArr: "⇒", dArr: "⇓", hArr: "⇔", forall: "∀", part: "∂", exist: "∃", empty: "∅", nabla: "∇", isin: "∈", notin: "∉", ni: "∋", prod: "∏", sum: "∑", minus: "−", lowast: "∗", radic: "√", prop: "∝", infin: "∞", ang: "∠", and: "∧", or: "∨", cap: "∩", cup: "∪", int: "∫", there4: "∴", sim: "∼", cong: "≅", asymp: "≈", ne: "≠", equiv: "≡", le: "≤", ge: "≥", sub: "⊂", sup: "⊃", nsub: "⊄", sube: "⊆", supe: "⊇", oplus: "⊕", otimes: "⊗", perp: "⊥", sdot: "⋅", lceil: "⌈", rceil: "⌉", lfloor: "⌊", rfloor: "⌋", lang: "〈", rang: "〉", loz: "◊", spades: "♠", clubs: "♣", hearts: "♥", diams: "♦" }; }, 5991: function (e, t) { (function (e, a) { true ? a(t) : 0; })(this, (function (e) {
+        }, 229: function (e) { e.exports = { quot: '"', amp: "&", apos: "'", lt: "<", gt: ">", nbsp: " ", iexcl: "¡", cent: "¢", pound: "£", curren: "¤", yen: "¥", brvbar: "¦", sect: "§", uml: "¨", copy: "©", ordf: "ª", laquo: "«", not: "¬", shy: "­", reg: "®", macr: "¯", deg: "°", plusmn: "±", sup2: "²", sup3: "³", acute: "´", micro: "µ", para: "¶", middot: "·", cedil: "¸", sup1: "¹", ordm: "º", raquo: "»", frac14: "¼", frac12: "½", frac34: "¾", iquest: "¿", Agrave: "À", Aacute: "Á", Acirc: "Â", Atilde: "Ã", Auml: "Ä", Aring: "Å", AElig: "Æ", Ccedil: "Ç", Egrave: "È", Eacute: "É", Ecirc: "Ê", Euml: "Ë", Igrave: "Ì", Iacute: "Í", Icirc: "Î", Iuml: "Ï", ETH: "Ð", Ntilde: "Ñ", Ograve: "Ò", Oacute: "Ó", Ocirc: "Ô", Otilde: "Õ", Ouml: "Ö", times: "×", Oslash: "Ø", Ugrave: "Ù", Uacute: "Ú", Ucirc: "Û", Uuml: "Ü", Yacute: "Ý", THORN: "Þ", szlig: "ß", agrave: "à", aacute: "á", acirc: "â", atilde: "ã", auml: "ä", aring: "å", aelig: "æ", ccedil: "ç", egrave: "è", eacute: "é", ecirc: "ê", euml: "ë", igrave: "ì", iacute: "í", icirc: "î", iuml: "ï", eth: "ð", ntilde: "ñ", ograve: "ò", oacute: "ó", ocirc: "ô", otilde: "õ", ouml: "ö", divide: "÷", oslash: "ø", ugrave: "ù", uacute: "ú", ucirc: "û", uuml: "ü", yacute: "ý", thorn: "þ", yuml: "ÿ", OElig: "Œ", oelig: "œ", Scaron: "Š", scaron: "š", Yuml: "Ÿ", fnof: "ƒ", circ: "ˆ", tilde: "˜", Alpha: "Α", Beta: "Β", Gamma: "Γ", Delta: "Δ", Epsilon: "Ε", Zeta: "Ζ", Eta: "Η", Theta: "Θ", Iota: "Ι", Kappa: "Κ", Lambda: "Λ", Mu: "Μ", Nu: "Ν", Xi: "Ξ", Omicron: "Ο", Pi: "Π", Rho: "Ρ", Sigma: "Σ", Tau: "Τ", Upsilon: "Υ", Phi: "Φ", Chi: "Χ", Psi: "Ψ", Omega: "Ω", alpha: "α", beta: "β", gamma: "γ", delta: "δ", epsilon: "ε", zeta: "ζ", eta: "η", theta: "θ", iota: "ι", kappa: "κ", lambda: "λ", mu: "μ", nu: "ν", xi: "ξ", omicron: "ο", pi: "π", rho: "ρ", sigmaf: "ς", sigma: "σ", tau: "τ", upsilon: "υ", phi: "φ", chi: "χ", psi: "ψ", omega: "ω", thetasym: "ϑ", upsih: "ϒ", piv: "ϖ", ensp: " ", emsp: " ", thinsp: " ", zwnj: "‌", zwj: "‍", lrm: "‎", rlm: "‏", ndash: "–", mdash: "—", lsquo: "‘", rsquo: "’", sbquo: "‚", ldquo: "“", rdquo: "”", bdquo: "„", dagger: "†", Dagger: "‡", bull: "•", hellip: "…", permil: "‰", prime: "′", Prime: "″", lsaquo: "‹", rsaquo: "›", oline: "‾", frasl: "⁄", euro: "€", image: "ℑ", weierp: "℘", real: "ℜ", trade: "™", alefsym: "ℵ", larr: "←", uarr: "↑", rarr: "→", darr: "↓", harr: "↔", crarr: "↵", lArr: "⇐", uArr: "⇑", rArr: "⇒", dArr: "⇓", hArr: "⇔", forall: "∀", part: "∂", exist: "∃", empty: "∅", nabla: "∇", isin: "∈", notin: "∉", ni: "∋", prod: "∏", sum: "∑", minus: "−", lowast: "∗", radic: "√", prop: "∝", infin: "∞", ang: "∠", and: "∧", or: "∨", cap: "∩", cup: "∪", int: "∫", there4: "∴", sim: "∼", cong: "≅", asymp: "≈", ne: "≠", equiv: "≡", le: "≤", ge: "≥", sub: "⊂", sup: "⊃", nsub: "⊄", sube: "⊆", supe: "⊇", oplus: "⊕", otimes: "⊗", perp: "⊥", sdot: "⋅", lceil: "⌈", rceil: "⌉", lfloor: "⌊", rfloor: "⌋", lang: "〈", rang: "〉", loz: "◊", spades: "♠", clubs: "♣", hearts: "♥", diams: "♦" }; }, 797: function (e, t) { (function (e, a) { true ? a(t) : 0; })(this, (function (e) {
             "use strict";
             var t = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 370, 1, 81, 2, 71, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 3, 0, 158, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 193, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 84, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 406, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 10, 1, 2, 0, 49, 6, 4, 4, 14, 9, 5351, 0, 7, 14, 13835, 9, 87, 9, 39, 4, 60, 6, 26, 9, 1014, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4706, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 101, 0, 161, 6, 10, 9, 357, 0, 62, 13, 499, 13, 983, 6, 110, 6, 6, 9, 4759, 9, 787719, 239];
             var a = [0, 11, 2, 25, 2, 18, 2, 1, 2, 14, 3, 13, 35, 122, 70, 52, 268, 28, 4, 48, 48, 31, 14, 29, 6, 37, 11, 29, 3, 35, 5, 7, 2, 4, 43, 157, 19, 35, 5, 35, 5, 39, 9, 51, 13, 10, 2, 14, 2, 6, 2, 1, 2, 10, 2, 14, 2, 6, 2, 1, 68, 310, 10, 21, 11, 7, 25, 5, 2, 41, 2, 8, 70, 5, 3, 0, 2, 43, 2, 1, 4, 0, 3, 22, 11, 22, 10, 30, 66, 18, 2, 1, 11, 21, 11, 25, 71, 55, 7, 1, 65, 0, 16, 3, 2, 2, 2, 28, 43, 28, 4, 28, 36, 7, 2, 27, 28, 53, 11, 21, 11, 18, 14, 17, 111, 72, 56, 50, 14, 50, 14, 35, 349, 41, 7, 1, 79, 28, 11, 0, 9, 21, 43, 17, 47, 20, 28, 22, 13, 52, 58, 1, 3, 0, 14, 44, 33, 24, 27, 35, 30, 0, 3, 0, 9, 34, 4, 0, 13, 47, 15, 3, 22, 0, 2, 0, 36, 17, 2, 24, 20, 1, 64, 6, 2, 0, 2, 3, 2, 14, 2, 9, 8, 46, 39, 7, 3, 1, 3, 21, 2, 6, 2, 1, 2, 4, 4, 0, 19, 0, 13, 4, 159, 52, 19, 3, 21, 2, 31, 47, 21, 1, 2, 0, 185, 46, 42, 3, 37, 47, 21, 0, 60, 42, 14, 0, 72, 26, 38, 6, 186, 43, 117, 63, 32, 7, 3, 0, 3, 7, 2, 1, 2, 23, 16, 0, 2, 0, 95, 7, 3, 38, 17, 0, 2, 0, 29, 0, 11, 39, 8, 0, 22, 0, 12, 45, 20, 0, 19, 72, 264, 8, 2, 36, 18, 0, 50, 29, 113, 6, 2, 1, 2, 37, 22, 0, 26, 5, 2, 1, 2, 31, 15, 0, 328, 18, 16, 0, 2, 12, 2, 33, 125, 0, 80, 921, 103, 110, 18, 195, 2637, 96, 16, 1071, 18, 5, 4026, 582, 8634, 568, 8, 30, 18, 78, 18, 29, 19, 47, 17, 3, 32, 20, 6, 18, 689, 63, 129, 74, 6, 0, 67, 12, 65, 1, 2, 0, 29, 6135, 9, 1237, 43, 8, 8936, 3, 2, 6, 2, 1, 2, 290, 16, 0, 30, 2, 3, 0, 15, 3, 9, 395, 2309, 106, 6, 12, 4, 8, 8, 9, 5991, 84, 2, 70, 2, 1, 3, 0, 3, 1, 3, 3, 2, 11, 2, 0, 2, 6, 2, 64, 2, 3, 3, 7, 2, 6, 2, 27, 2, 3, 2, 4, 2, 0, 4, 6, 2, 339, 3, 24, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 7, 1845, 30, 7, 5, 262, 61, 147, 44, 11, 6, 17, 0, 322, 29, 19, 43, 485, 27, 757, 6, 2, 3, 2, 1, 2, 14, 2, 196, 60, 67, 8, 0, 1205, 3, 2, 26, 2, 1, 2, 0, 3, 0, 2, 9, 2, 3, 2, 0, 2, 0, 7, 0, 5, 0, 2, 0, 2, 0, 2, 2, 2, 1, 2, 0, 3, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1, 2, 0, 3, 3, 2, 6, 2, 3, 2, 3, 2, 0, 2, 9, 2, 16, 6, 2, 2, 4, 2, 16, 4421, 42719, 33, 4153, 7, 221, 3, 5761, 15, 7472, 16, 621, 2467, 541, 1507, 4938, 6, 4191];
@@ -3596,11 +3596,13 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             ue.parseExprAtomDefault = function () { this.unexpected(); };
             ue.parseExprImport = function (e) { var t = this.startNode(); if (this.containsEsc) {
                 this.raiseRecoverable(this.start, "Escape sequence in keyword import");
-            } var a = this.parseIdent(true); if (this.type === g.parenL && !e) {
+            } this.next(); if (this.type === g.parenL && !e) {
                 return this.parseDynamicImport(t);
             }
             else if (this.type === g.dot) {
-                t.meta = a;
+                var a = this.startNodeAt(t.start, t.loc && t.loc.start);
+                a.name = "import";
+                t.meta = this.finishNode(a, "Identifier");
                 return this.parseImportMeta(t);
             }
             else {
@@ -3695,7 +3697,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             ue.parseNew = function () { if (this.containsEsc) {
                 this.raiseRecoverable(this.start, "Escape sequence in keyword new");
             } var e = this.startNode(); this.next(); if (this.options.ecmaVersion >= 6 && this.type === g.dot) {
-                var t = this.startNodeAt(e.start, e.startLoc);
+                var t = this.startNodeAt(e.start, e.loc && e.loc.start);
                 t.name = "new";
                 e.meta = this.finishNode(t, "Identifier");
                 this.next();
@@ -5301,7 +5303,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             ze.readWord = function () { var e = this.readWord1(); var t = g.name; if (this.keywords.test(e)) {
                 t = v[e];
             } return this.finishToken(t, e); };
-            var $e = "8.11.2";
+            var $e = "8.11.3";
             J.acorn = { Parser: J, version: $e, defaultOptions: D, Position: P, SourceLocation: N, getLineInfo: getLineInfo, Node: ve, TokenType: u, tokTypes: g, keywordTypes: v, TokContext: oe, tokContexts: de, isIdentifierChar: isIdentifierChar, isIdentifierStart: isIdentifierStart, Token: He, isNewLine: isNewLine, lineBreak: w, lineBreakG: _, nonASCIIwhitespace: b };
             function parse(e, t) { return J.parse(e, t); }
             function parseExpressionAt(e, t, a) { return J.parseExpressionAt(e, t, a); }
@@ -7655,7 +7657,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             Object.defineProperty(t, "__esModule", { value: true });
             var s = a(5681);
             var r = a(4128);
-            var p = i(a(6065));
+            var p = i(a(3629));
             var n = process.env.GITHUB_TOKEN;
             var o = /(?:\/\d{4}\/(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2})\/[a-z0-9]{20,}|current)\.js$/;
             var d = "current.js";
@@ -7768,7 +7770,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
         }, 9796: function (e) {
             "use strict";
             e.exports = require("zlib");
-        }, 6065: function (e, t, a) {
+        }, 3629: function (e, t, a) {
             "use strict";
             a.r(t);
             a.d(t, { "default": function () { return _t; } });
@@ -9328,11 +9330,13 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             me.parseExprAtomDefault = function () { this.unexpected(); };
             me.parseExprImport = function (e) { var t = this.startNode(); if (this.containsEsc) {
                 this.raiseRecoverable(this.start, "Escape sequence in keyword import");
-            } var a = this.parseIdent(true); if (this.type === _.parenL && !e) {
+            } this.next(); if (this.type === _.parenL && !e) {
                 return this.parseDynamicImport(t);
             }
             else if (this.type === _.dot) {
-                t.meta = a;
+                var a = this.startNodeAt(t.start, t.loc && t.loc.start);
+                a.name = "import";
+                t.meta = this.finishNode(a, "Identifier");
                 return this.parseImportMeta(t);
             }
             else {
@@ -9427,7 +9431,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             me.parseNew = function () { if (this.containsEsc) {
                 this.raiseRecoverable(this.start, "Escape sequence in keyword new");
             } var e = this.startNode(); this.next(); if (this.options.ecmaVersion >= 6 && this.type === _.dot) {
-                var t = this.startNodeAt(e.start, e.startLoc);
+                var t = this.startNodeAt(e.start, e.loc && e.loc.start);
                 t.name = "new";
                 e.meta = this.finishNode(t, "Identifier");
                 this.next();
@@ -11033,7 +11037,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             $e.readWord = function () { var e = this.readWord1(); var t = _.name; if (this.keywords.test(e)) {
                 t = w[e];
             } return this.finishToken(t, e); };
-            var Je = "8.11.2";
+            var Je = "8.11.3";
             Q.acorn = { Parser: Q, version: Je, defaultOptions: O, Position: D, SourceLocation: V, getLineInfo: getLineInfo, Node: we, TokenType: h, tokTypes: _, keywordTypes: w, TokContext: le, tokContexts: ue, isIdentifierChar: isIdentifierChar, isIdentifierStart: isIdentifierStart, Token: We, isNewLine: isNewLine, lineBreak: b, lineBreakG: y, nonASCIIwhitespace: E };
             function parse(e, t) { return Q.parse(e, t); }
             function parseExpressionAt(e, t, a) { return Q.parseExpressionAt(e, t, a); }
@@ -11309,10 +11313,20 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             function getLangStrings(e) { var t = {}; var a = parse(e, { ecmaVersion: "2022" }); simple(a, { ObjectExpression: function (e) { var _a; if (e.properties.find((function (e) { var _a; return ((_a = e.key) === null || _a === void 0 ? void 0 : _a.type) === "Identifier" && (e.key.name === "DISCORD_NAME" || e.key.name === "DISCORD_DESC_SHORT"); }))) {
                     for (var _i = 0, _b = e.properties; _i < _b.length; _i++) {
                         var a_24 = _b[_i];
-                        t[(_a = a_24.key.value) !== null && _a !== void 0 ? _a : a_24.key.name] = a_24.value.raw;
+                        var e_54 = (_a = a_24.key.value) !== null && _a !== void 0 ? _a : a_24.key.name;
+                        var i_19 = void 0;
+                        if (a_24.value.type === "Literal") {
+                            i_19 = a_24.value.raw;
+                        }
+                        else if (a_24.value.type === "TemplateLiteral") {
+                            var e_55 = a_24.value.quasis.map((function (e) { return e.value.cooked; })).join("");
+                            var t_34 = JSON.stringify(e_55);
+                            i_19 = t_34;
+                        }
+                        t[e_54] = i_19;
                     }
                 } } }); return t; }
-            var Ye = a(9165);
+            var Ye = a(4262);
             var Ze = { Boolean: "Boolean", EOF: "<end>", Identifier: "Identifier", PrivateIdentifier: "PrivateIdentifier", Keyword: "Keyword", Null: "Null", Numeric: "Numeric", Punctuator: "Punctuator", String: "String", RegularExpression: "RegularExpression", Template: "Template", JSXIdentifier: "JSXIdentifier", JSXText: "JSXText" };
             function convertTemplatePart(e, t) { var a = e[0], i = e[e.length - 1]; var s = { type: Ze.Template, value: t.slice(a.start, i.end) }; if (a.loc) {
                 s.loc = { start: a.loc.start, end: i.loc.end };
@@ -11371,9 +11385,9 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
                 }
                 else if (a === i.regexp) {
                     e.type = Ze.RegularExpression;
-                    var t_34 = e.value;
-                    e.regex = { flags: t_34.flags, pattern: t_34.pattern };
-                    e.value = "/".concat(t_34.pattern, "/").concat(t_34.flags);
+                    var t_35 = e.value;
+                    e.regex = { flags: t_35.flags, pattern: t_35.pattern };
+                    e.value = "/".concat(t_35.pattern, "/").concat(t_35.flags);
                 } return e; }, onToken: function (e, t) {
                     var _this_1 = this;
                     var a = this._acornTokTypes, i = t.tokens, s = this._tokens;
@@ -11527,14 +11541,14 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
                 } if (e.tokens) {
                     t.tokens = e.tokens;
                 } if (t.body.length) {
-                    var e_54 = t.body[0];
+                    var e_56 = t.body[0];
                     if (t.range) {
-                        t.range[0] = e_54.range[0];
+                        t.range[0] = e_56.range[0];
                     }
                     if (t.loc) {
-                        t.loc.start = e_54.loc.start;
+                        t.loc.start = e_56.loc.start;
                     }
-                    t.start = e_54.start;
+                    t.start = e_56.start;
                 } if (e.lastToken) {
                     if (t.range) {
                         t.range[1] = e.lastToken.range[1];
@@ -11580,8 +11594,8 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             var rt = { ArrayExpression: ["elements"], ArrayPattern: ["elements"], ArrowFunctionExpression: ["params", "body"], AssignmentExpression: ["left", "right"], AssignmentPattern: ["left", "right"], AwaitExpression: ["argument"], BinaryExpression: ["left", "right"], BlockStatement: ["body"], BreakStatement: ["label"], CallExpression: ["callee", "arguments"], CatchClause: ["param", "body"], ChainExpression: ["expression"], ClassBody: ["body"], ClassDeclaration: ["id", "superClass", "body"], ClassExpression: ["id", "superClass", "body"], ConditionalExpression: ["test", "consequent", "alternate"], ContinueStatement: ["label"], DebuggerStatement: [], DoWhileStatement: ["body", "test"], EmptyStatement: [], ExperimentalRestProperty: ["argument"], ExperimentalSpreadProperty: ["argument"], ExportAllDeclaration: ["exported", "source"], ExportDefaultDeclaration: ["declaration"], ExportNamedDeclaration: ["declaration", "specifiers", "source"], ExportSpecifier: ["exported", "local"], ExpressionStatement: ["expression"], ForInStatement: ["left", "right", "body"], ForOfStatement: ["left", "right", "body"], ForStatement: ["init", "test", "update", "body"], FunctionDeclaration: ["id", "params", "body"], FunctionExpression: ["id", "params", "body"], Identifier: [], IfStatement: ["test", "consequent", "alternate"], ImportDeclaration: ["specifiers", "source"], ImportDefaultSpecifier: ["local"], ImportExpression: ["source"], ImportNamespaceSpecifier: ["local"], ImportSpecifier: ["imported", "local"], JSXAttribute: ["name", "value"], JSXClosingElement: ["name"], JSXClosingFragment: [], JSXElement: ["openingElement", "children", "closingElement"], JSXEmptyExpression: [], JSXExpressionContainer: ["expression"], JSXFragment: ["openingFragment", "children", "closingFragment"], JSXIdentifier: [], JSXMemberExpression: ["object", "property"], JSXNamespacedName: ["namespace", "name"], JSXOpeningElement: ["name", "attributes"], JSXOpeningFragment: [], JSXSpreadAttribute: ["argument"], JSXSpreadChild: ["expression"], JSXText: [], LabeledStatement: ["label", "body"], Literal: [], LogicalExpression: ["left", "right"], MemberExpression: ["object", "property"], MetaProperty: ["meta", "property"], MethodDefinition: ["key", "value"], NewExpression: ["callee", "arguments"], ObjectExpression: ["properties"], ObjectPattern: ["properties"], PrivateIdentifier: [], Program: ["body"], Property: ["key", "value"], PropertyDefinition: ["key", "value"], RestElement: ["argument"], ReturnStatement: ["argument"], SequenceExpression: ["expressions"], SpreadElement: ["argument"], StaticBlock: ["body"], Super: [], SwitchCase: ["test", "consequent"], SwitchStatement: ["discriminant", "cases"], TaggedTemplateExpression: ["tag", "quasi"], TemplateElement: [], TemplateLiteral: ["quasis", "expressions"], ThisExpression: [], ThrowStatement: ["argument"], TryStatement: ["block", "handler", "finalizer"], UnaryExpression: ["argument"], UpdateExpression: ["argument"], VariableDeclaration: ["declarations"], VariableDeclarator: ["id", "init"], WhileStatement: ["test", "body"], WithStatement: ["object", "body"], YieldExpression: ["argument"] };
             var pt = Object.keys(rt);
             for (var _i = 0, pt_1 = pt; _i < pt_1.length; _i++) {
-                var e_55 = pt_1[_i];
-                Object.freeze(rt[e_55]);
+                var e_57 = pt_1[_i];
+                Object.freeze(rt[e_57]);
             }
             Object.freeze(rt);
             var nt = rt;
@@ -11591,12 +11605,12 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             function unionWith(e) { var t = Object.assign({}, KEYS); for (var _i = 0, _a = Object.keys(e); _i < _a.length; _i++) {
                 var a_25 = _a[_i];
                 if (Object.prototype.hasOwnProperty.call(t, a_25)) {
-                    var i_19 = new Set(e[a_25]);
+                    var i_20 = new Set(e[a_25]);
                     for (var _b = 0, _c = t[a_25]; _b < _c.length; _b++) {
-                        var e_56 = _c[_b];
-                        i_19.add(e_56);
+                        var e_58 = _c[_b];
+                        i_20.add(e_58);
                     }
-                    t[a_25] = Object.freeze(Array.from(i_19));
+                    t[a_25] = Object.freeze(Array.from(i_20));
                 }
                 else {
                     t[a_25] = Object.freeze(Array.from(e[a_25]));
@@ -11626,25 +11640,25 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
             var ht = getLatestEcmaVersion();
             var ft = getSupportedEcmaVersions();
             var vt = getEndpoingsStrings;
-            function getEndpoingsStrings(e) { var t = espree_parse(e, { ecmaVersion: 2022 }); var a = t.body[0].expression.arguments[0].elements[1].properties; var i = {}; function parseEndpoints(e) { var _a, _b, _c, _d, _f, _g, _h, _j; var t = (_b = (_a = e === null || e === void 0 ? void 0 : e.value) === null || _a === void 0 ? void 0 : _a.body) === null || _b === void 0 ? void 0 : _b.body; for (var _i = 0, t_35 = t; _i < t_35.length; _i++) {
-                var e_57 = t_35[_i];
-                if ((e_57 === null || e_57 === void 0 ? void 0 : e_57.type) !== "VariableDeclaration")
+            function getEndpoingsStrings(e) { var t = espree_parse(e, { ecmaVersion: 2022 }); var a = t.body[0].expression.arguments[0].elements[1].properties; var i = {}; function parseEndpoints(e) { var _a, _b, _c, _d, _f, _g, _h, _j; var t = (_b = (_a = e === null || e === void 0 ? void 0 : e.value) === null || _a === void 0 ? void 0 : _a.body) === null || _b === void 0 ? void 0 : _b.body; for (var _i = 0, t_36 = t; _i < t_36.length; _i++) {
+                var e_59 = t_36[_i];
+                if ((e_59 === null || e_59 === void 0 ? void 0 : e_59.type) !== "VariableDeclaration")
                     continue;
-                for (var _k = 0, _l = e_57.declarations; _k < _l.length; _k++) {
-                    var t_37 = _l[_k];
-                    if (((_f = (_d = (_c = t_37.init) === null || _c === void 0 ? void 0 : _c.callee) === null || _d === void 0 ? void 0 : _d.object) === null || _f === void 0 ? void 0 : _f.name) !== "Object" || ((_j = (_h = (_g = t_37.init) === null || _g === void 0 ? void 0 : _g.callee) === null || _h === void 0 ? void 0 : _h.property) === null || _j === void 0 ? void 0 : _j.name) !== "freeze")
+                for (var _k = 0, _l = e_59.declarations; _k < _l.length; _k++) {
+                    var t_38 = _l[_k];
+                    if (((_f = (_d = (_c = t_38.init) === null || _c === void 0 ? void 0 : _c.callee) === null || _d === void 0 ? void 0 : _d.object) === null || _f === void 0 ? void 0 : _f.name) !== "Object" || ((_j = (_h = (_g = t_38.init) === null || _g === void 0 ? void 0 : _g.callee) === null || _h === void 0 ? void 0 : _h.property) === null || _j === void 0 ? void 0 : _j.name) !== "freeze")
                         continue;
-                    for (var _m = 0, _o = t_37.init.arguments; _m < _o.length; _m++) {
-                        var e_58 = _o[_m];
-                        var t_38 = e_58.properties;
-                        if (!(t_38 === null || t_38 === void 0 ? void 0 : t_38.some((function (e) { return e.key.name === "USER_RELATIONSHIPS"; }))))
+                    for (var _m = 0, _o = t_38.init.arguments; _m < _o.length; _m++) {
+                        var e_60 = _o[_m];
+                        var t_39 = e_60.properties;
+                        if (!(t_39 === null || t_39 === void 0 ? void 0 : t_39.some((function (e) { return e.key.name === "USER_RELATIONSHIPS"; }))))
                             continue;
-                        for (var _p = 0, t_36 = t_38; _p < t_36.length; _p++) {
-                            var e_59 = t_36[_p];
-                            if (e_59.key.name === "INDEX")
+                        for (var _p = 0, t_37 = t_39; _p < t_37.length; _p++) {
+                            var e_61 = t_37[_p];
+                            if (e_61.key.name === "INDEX")
                                 continue;
-                            if (e_59.value.type === "Literal") {
-                                i[e_59.key.name] = e_59.value.value;
+                            if (e_61.value.type === "Literal") {
+                                i[e_61.key.name] = e_61.value.value;
                                 continue;
                             }
                         }
@@ -11659,19 +11673,19 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
                 h += u ? "\n" + m : m;
             } return h; }
             function diff(e) { var t = []; var a = []; var i = []; for (var _i = 0, _a = Object.keys(e[0]); _i < _a.length; _i++) {
-                var i_20 = _a[_i];
-                if (e[1][i_20] != undefined) {
-                    if (e[0][i_20] !== e[1][i_20]) {
-                        a.push([i_20, e[0][i_20], e[1][i_20]]);
+                var i_21 = _a[_i];
+                if (e[1][i_21] != undefined) {
+                    if (e[0][i_21] !== e[1][i_21]) {
+                        a.push([i_21, e[0][i_21], e[1][i_21]]);
                     }
                 }
                 else {
-                    t.push([i_20, e[0][i_20]]);
+                    t.push([i_21, e[0][i_21]]);
                 }
             } for (var _b = 0, _c = Object.keys(e[1]); _b < _c.length; _b++) {
-                var t_39 = _c[_b];
-                if (e[0][t_39] == undefined) {
-                    i.push([t_39, e[1][t_39]]);
+                var t_40 = _c[_b];
+                if (e[0][t_40] == undefined) {
+                    i.push([t_40, e[1][t_40]]);
                 }
             } return { addedStrings: i, updatedStrings: a, removedStrings: t }; }
             function buildString(e, t, a, i) { var s = ""; if (t[0] || a[0] || i[0]) {

@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0
   '@adryd325/discord-datamining-lang-differ':
-    specifier: github:adryd325/discord-datamining-lang-differ#8f1f359b06489884943b581b87da54d38af4753a
-    version: github.com/adryd325/discord-datamining-lang-differ/8f1f359b06489884943b581b87da54d38af4753a
+    specifier: github:adryd325/discord-datamining-lang-differ#ab25716e215520efdb8a6ab528e96da319e80153
+    version: github.com/adryd325/discord-datamining-lang-differ/ab25716e215520efdb8a6ab528e96da319e80153
 
 devDependencies:
   '@octokit/webhooks-types':
@@ -171,14 +171,6 @@ packages:
     hasBin: true
     dev: true
 
-  /acorn-jsx@5.3.2(acorn@8.11.3):
-    resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
-    peerDependencies:
-      acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-    dependencies:
-      acorn: 8.11.3
-    dev: false
-
   /acorn-walk@8.3.2:
     resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
     engines: {node: '>=0.4.0'}
@@ -196,20 +188,6 @@ packages:
 
   /deprecation@2.3.1:
     resolution: {integrity: sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==}
-    dev: false
-
-  /eslint-visitor-keys@3.4.3:
-    resolution: {integrity: sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: false
-
-  /espree@9.6.1:
-    resolution: {integrity: sha512-oruZaFkjorTpF32kDSI5/75ViwGeZginGGy2NoOSg3Q9bnwlnmDm4HLnkl0RE3n+njDXR037aY1+x58Z/zFdwQ==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      acorn: 8.11.3
-      acorn-jsx: 5.3.2(acorn@8.11.3)
-      eslint-visitor-keys: 3.4.3
     dev: false
 
   /is-plain-object@4.1.1:
@@ -279,12 +257,11 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: false
 
-  github.com/adryd325/discord-datamining-lang-differ/8f1f359b06489884943b581b87da54d38af4753a:
-    resolution: {tarball: https://codeload.github.com/adryd325/discord-datamining-lang-differ/tar.gz/8f1f359b06489884943b581b87da54d38af4753a}
+  github.com/adryd325/discord-datamining-lang-differ/ab25716e215520efdb8a6ab528e96da319e80153:
+    resolution: {tarball: https://codeload.github.com/adryd325/discord-datamining-lang-differ/tar.gz/ab25716e215520efdb8a6ab528e96da319e80153}
     name: '@adryd325/discord-datamining-lang-differ'
     version: 1.3.0
     dependencies:
       acorn: 8.11.3
       acorn-walk: 8.3.2
-      espree: 9.6.1
     dev: false
